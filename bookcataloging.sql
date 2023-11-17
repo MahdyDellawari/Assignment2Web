@@ -22,7 +22,12 @@ CREATE TABLE IF NOT EXISTS `bookcataloging` (
 -- Dumping data for table `employees`
 --
  
-INSERT INTO `employees` (`id`, `name`, `address`, `salary`) VALUES
-(1, 'Martin Blank', '25, Rue Lauriston, Paris', 8000);
+INSERT INTO `BookCataloging` (`Id`, `BookName`, `AuthorName`, `Edition`) VALUES
+(1, 'The Great Gatsby', 'F. Scott Fitzgerald', 'First Edition'),
+(2, 'To Kill a Mockingbird', 'Harper Lee', 'Second Edition'),
+(3, '1984', 'George Orwell', 'Revised Edition'),
+(4, 'The Catcher in the Rye', 'J.D. Salinger', 'Third Edition'),
+(5, 'Pride and Prejudice', 'Jane Austen', 'Classic Edition');
+
 has context menu
 Compose

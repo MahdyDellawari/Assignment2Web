@@ -22,7 +22,7 @@
       </dl>
       <dl>
         <dt>AuthorName</dt>
-        <dd><input type="text" name="BookAuthor"  /></dd>
+        <dd><input type="text" name="AuthorName"  /></dd>
           
       </dl>
       <dl>

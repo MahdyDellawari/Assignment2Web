@@ -11,10 +11,10 @@ USE demo;
 --
  
 CREATE TABLE IF NOT EXISTS `bookcataloging` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `authorName` varchar(255) NOT NULL,
-  `edition` int(10) NOT NULL,
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(100) NOT NULL,
+  `AuthorName` varchar(255) NOT NULL,
+  `Edition` int(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
  

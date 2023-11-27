@@ -6,17 +6,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="style.css" />
     <title>Art & Photography Books</title>
 </head>
 
 <body>
-
+<?php include 'header.php'; ?>
 <h1>Art & Photography Books</h1>
 
 <ul>
     <?php
+    $books_data = array(
+        array('Merton Among Us: The Living Legacy of Thomas Merton', 'By Kentucky College of Art and Design', 'First Edition', 'booksImages/arts/1.png'),
+        array('Manuale di Fotografia - Occhio, Mente e Cuore', 'Marco Crupi', 'Second Edition', 'booksImages/arts/2.png'),
+        array('Adobe for Fashion: Illustrator CS6', 'Robin Schneider', 'Revised Edition', 'booksImages/arts/3.png'),
+        array('A Coloring Book for Big Kids - 3rd Edition', 'Phil Lewis', 'Third Edition', 'booksImages/arts/4.png'),
+        array('On Being a Photographer', 'David Hurn', 'Classic Edition', 'booksImages/arts/5.png')
+    );
+
     // Display all art and photography books
-    for ($i = 0; $i <= 4; $i++) {
+    $start_index = 0;  // Change this to the actual starting index of "Art & Photography" books
+    $end_index = count($books_data) - 1;  // Change this to the actual ending index of "Art & Photography" books
+
+    for ($i = $start_index; $i <= $end_index; $i++) {
         echo "<li>";
 
         // Check if the image path exists
@@ -33,7 +45,7 @@
     }
     ?>
 </ul>
-
+<?php include 'footer.php'; ?>
 </body>
 
 </html>
